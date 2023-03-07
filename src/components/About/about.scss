@@ -1,0 +1,65 @@
+.container{
+    width: 100vw;
+    height: 100wh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    border: solid 2px blue;
+    border-radius: 15px;
+    width: 90%;
+
+    &__me{
+        display: flex;
+            flex-direction: row;
+            width: 100%;
+            padding: 10px;
+            justify-content: space-around;
+
+            &__photo {
+                width: 40%;
+                }
+
+                &__description {
+                    width: 50%;
+                    max-width: 300px;
+                    padding: 20px;
+                    margin-top: 50px;
+                }
+
+    }
+
+    &__contact {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 10px;
+
+        &__mail {
+                margin: 0;
+            }
+    }
+
+    &__description {
+        width: 50%;
+        max-width: 300px;
+        padding: 20px;
+    }
+    &__like {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+.listabout {
+    width: 300px;
+}
+

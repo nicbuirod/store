@@ -1,0 +1,38 @@
+.detail{
+    display: grid;
+    width: 90vw;
+    height: 80vh;
+    grid-template-columns: 1fr 1fr;
+    margin: 50px;
+    border: solid 3px rgb(99, 99, 99);
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px rgba(167, 163, 163, 0.479);
+
+    &__image{
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     
+        img{
+            width: 60%;
+            
+        }
+
+    }
+
+    &__text{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 10px;
+       
+    }
+}
+.rating{
+    display: flex;
+    justify-content: space-around;
+}
+p{
+    text-align: justify;
+}

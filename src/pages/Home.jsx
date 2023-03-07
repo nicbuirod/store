@@ -3,6 +3,9 @@ import { getAllProduct } from "../services/storeAPI";
 import useData from "../hooks/useData";
 import ProductList from "../components/ProductList/ProductList";
 import { Context } from "../context";
+import Navbar from "../components/Navbar/Navbar";
+
+import "../styles/global.scss";
 
 const Home = () => {
   const { data: products } = useData([], getAllProduct);
@@ -14,7 +17,9 @@ const Home = () => {
   }, []);
 
   return (
-    <div>
+    <div className="home">
+      <Navbar />
+
       <ProductList products={products} />
     </div>
   );

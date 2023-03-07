@@ -3,6 +3,7 @@ import { useParams } from "react-router";
 import { Context } from "../context";
 import { getOneProduct } from "../services/storeAPI";
 import ProductDetails from "../components/ProductDetail/ProductDetails";
+import Navbar from "../components/Navbar/Navbar";
 
 const ProductDetail = () => {
   const [product, setProduct] = useState({});
@@ -11,7 +12,9 @@ const ProductDetail = () => {
   const { store } = context || {};
   const { products } = store || [];
 
-  const { id, title, image, price } = product || {};
+  const { id, title, image, price, description, category, rating } =
+    product || {};
+  const { rate, count } = rating || {};
 
   console.log(product);
 
@@ -32,7 +35,21 @@ const ProductDetail = () => {
 
   useEffect(() => {}, [products]);
 
-  return <ProductDetails title={title} image={image} id={id} price={price} />;
+  return (
+    <div>
+      <Navbar />
+      <ProductDetails
+        title={title}
+        image={image}
+        id={id}
+        price={price}
+        description={description}
+        category={category}
+        rate={rate}
+        count={count}
+      />
+    </div>
+  );
 };
 
 export default ProductDetail;

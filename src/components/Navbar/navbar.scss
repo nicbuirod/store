@@ -1,0 +1,25 @@
+.navbar{
+    width: 94vw;
+    height: 30px;
+    background-color: rgba(16, 16, 218, 0.712);
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 10px;
+
+    button{
+        background-color: rgba(15, 124, 197, 0.253);
+        border-radius: 5px;
+        width: 7%;
+        margin-right: 20px;
+        margin-left: 20px;
+        border-color: rgb(7, 7, 105);
+    }
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
